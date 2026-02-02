@@ -46,7 +46,7 @@ form.addEventListener("submit", async (event) => {
     formData.append("email", emailInput.value.trim());
 
     try {
-        const response = await fetch("https://topsis-backend-1038.onrender.com/api/topsis/run", {
+        const response = await fetch("https://topsis-backend-1o38.onrender.com/api/topsis/run", {
             method: "POST",
             body: formData
         });
