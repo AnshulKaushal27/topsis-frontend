@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TOPSIS Decision Tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Page Header -->
+    <header>
+        <h1>TOPSIS Decision Making Tool</h1>
+        <p>
+            Technique for Order Preference by Similarity to Ideal Solution
+        </p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Run TOPSIS Analysis</h2>
+
+            <form id="topsis-form">
+
+                <!-- CSV Upload -->
+                <div>
+                    <label for="csvFile">Upload CSV File</label><br>
+                    <input type="file" id="csvFile" name="file" accept=".csv" required>
+                </div>
+
+                <br>
+
+                <!-- Weights -->
+                <div>
+                    <label for="weights">Weights (comma-separated)</label><br>
+                    <input
+                        type="text"
+                        id="weights"
+                        name="weights"
+                        placeholder="e.g. 1,1,1,1"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <!-- Impacts -->
+                <div>
+                    <label for="impacts">Impacts (comma-separated + or -)</label><br>
+                    <input
+                        type="text"
+                        id="impacts"
+                        name="impacts"
+                        placeholder="e.g. +,+,-,+"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <!-- Email -->
+                <div>
+                    <label for="email">Email Address</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="your@email.com"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <!-- Submit -->
+                <div>
+                    <button type="submit">
+                        Run TOPSIS
+                    </button>
+                </div>
+
+            </form>
+
+            <!-- Status Message -->
+            <div id="status-message"></div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Developed by Anshul Kaushal | TOPSIS PyPI Package
+        </p>
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
